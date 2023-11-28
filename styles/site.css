@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --backgroundColour: #0f0f0f;
+    --primaryColour: #c93432;
+    --fontColour: #fff;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    background-color: var(--backgroundColour);
+}
+
+#navBar {
+    border-block: solid 5px var(--primaryColour);
+    color: var(--fontColour);
+}
+
+#navBar>header {
+    align-items: center;
+}
+
+#navBar>header img {
+    inline-size: 40%;
+}
+
+#navBar a {
+    font-size: 1.5em;
+    color: var(--fontColour);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navBar nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerNav {
+    margin-inline: auto;
+    border: solid 5px var(--primaryColour);
+    background-color: var(--primaryColour);
+    text-align: center;
+}
+
+#footerNav a {
+    color: var(--fontColour);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footerNav nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#footerNav nav ul a {
+    font-size: 0.9em;
+    margin-inline-end: 0.5em;
+}
+
+#footerNav small {
+    color: var(--fontColour);
+}
+
+.backgroundImgChameleon {
+    min-block-size: 50vh;
+    background-image: url(../images/ante-hamersmit-qM8zX1celvc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+    height: 80vh;
+    opacity: 0.9;
+}
+
+.contactUs {
+    display: grid;
+}
+
+.contactUsIcons1 {
+    background-image: url(../images/circle-phone.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 128px;
+    width: 128px;
+}
+
+.contactUsIcons2 {
+    background-image: url(../images/at.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 128px;
+    width: 128px;
+}
+
+.contactUsIcons1,
+.contactUsIcons2 {
+    border: solid var(--fontColour);
+    background-color: var(--fontColour);
+    border-radius: 50%;
+}
+
+.notMobileLogo {
+    display: none;
+}
+
+.notMobile {
+    display: none;
+}
+
+.shop {
+    align-items: center;
+    gap: 5px;
+    color: var(--fontColour);
+}
+
+.product {
+    border: 5px solid var(--fontColour);
+    block-size: 37em;
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+    inline-size: 25em;
+    margin-block-end: 0.5em;
+}
+
+.petCare {
+    align-items: center;
+    gap: 5px;
+    color: var(--primaryColour);
+    background-color: var(--fontColour);
+}
+
+.petCareInfo {
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+    inline-size: 25em;
+    margin-block-end: 0.5em;
+}
+
+.backgroundImgVets{
+    min-block-size: 50vh;
+    background-image: url(../images/vetsTimaMiroshnichenko.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+    height: 80vh;
+    opacity: 0.9;
+}
+
+a {
+    color: var(--fontColour);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+img {
+    max-inline-size: 100%;
+    height: auto;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--fontColour);
+}
+
+main p {
+    color: var(--primaryColour);
+    font-size: 1.5em;
+    margin: 2em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .notMobile {
+        display: contents;
+    }
+
+    .mobileLogo {
+        display: none;
+    }
+
+    .notMobileLogo {
+        display: flex;
+    }
+
+    #footerNav nav ul a {
+        font-size: 1.2em;
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 5px;
+        color: var(--fontColour);
+    }
+
+    .product {
+        border: 5px solid var(--fontColour);
+        block-size: 37em;
+        text-align: center;
+        padding: 0.5em;
+        margin: auto;
+        inline-size: 25em;
+        margin-block-end: 0.5em;
+    }
+
+    .product img {
+        max-inline-size: 100%;
+        height: auto;
+        border: 3px solid var(--fontColour);
+        border-radius: 15%;
+    }
+
+    .product button {
+        background-color: var(--fontColour);
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .petCare {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 5px;
+        color: var(--primaryColour);
+        background-color: var(--fontColour);
+    }
+
+    .petCareInfo {
+        text-align: center;
+        padding: 0.5em;
+        margin: auto;
+        inline-size: 25em;
+        margin-block-end: 0.5em;
+    }
+
+    .petCareInfo img {
+        max-inline-size: 100%;
+        height: auto;
+        padding: 2em;
+    }
+    
+    .floatIndex1{
+    float: right;
+    padding: 0.5em;
+}
+
+.floatIndex2{
+    float: left;
+    padding: 0.5em;
+}
+}
