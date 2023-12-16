@@ -39,6 +39,57 @@
             </a>
             <p>Email<br><a href="mailto:info@kodiakkreatures.ca">info@kodiakkreatures.ca</a></p>
         </section>
+        <form>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" maxlength="60"><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" maxlength="60"><br>
+            <label for="email">E-Mail: </label>
+            <input type="text" id="email" name="email" maxlength="60"><br>
+            <fieldset>
+                <legend>Type of Pet</legend>
+                <input type="radio" id="mammal" name="type" value="mammal">
+                <label for="mammal">Mammal</label><br>
+                <input type="radio" id="bird" name="type" value="bird">
+                <label for="mammal">Bird</label><br>
+                <input type="radio" id="reptile" name="type" value="reptile">
+                <label for="mammal">Reptile</label><br>
+                <input type="radio" id="amphibian" name="type" value="amphibian">
+                <label for="mammal">Amphibian</label><br>
+                <input type="radio" id="fish" name="type" value="type">
+                <label for="mammal">Fish</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>I would like more info abaout...</legend>
+                <input type="checkbox" id="vet" name="vet" value="vet">
+                <label for="vet">Veterinary Reservations</label><br>
+                <input type="checkbox" id="groom" name="groom" value="groom">
+                <label for="groom">Pet Grooming</label><br>
+                <input type="checkbox" id="rescues" name="rescues" value="rescues">
+                <label for="rescues">Rescues</label><br>
+                <input type="checkbox" id="petsit" name="petsit" value="petsit">
+                <label for="petsit">Pet-Sitting</label><br>
+            </fieldset><br>
+            <label for="extra">Extra Inquiries: </label>
+            <textarea name="extra" id="extra" cols="30" rows="10" maxlength="1000"></textarea>
+            <fieldset>
+                <legend>How did you find us?</legend>
+                <label for="internet">Internet: </label>
+                    <select name="internet" id="internet">
+                        <option value="select">--Select One of the Following--</option>
+                        <option value="search">Search Engine</option>
+                        <option value="link">Link from another website</option>
+                    </select><br>
+                <label for="noninternet">Non-Internet: </label>
+                    <select name="noninternet" id="noninternet">
+                        <option value="select">--Select One of the Following--</option>
+                        <option value="referral">Referred to by a friend</option>
+                        <option value="ad">Advertisement</option>
+                    </select>    
+            </fieldset><br>
+            <input type="submit" id="subbtn" name="subbtn">
+            <input type="reset" id="resbtn" name="resbtn">
+        </form>
     </main>
     <footer id="footerNav">
         <nav>
@@ -58,6 +109,7 @@
                 Canada<br>
                 M4P 1A6
             </p>
+            <a>www.kodiakkreatures.ca</a><br>
             <a href="tel:8199710249">(819) 971-0249</a><br>
             <a href="mailto:info@kodiakkreatures.ca">info@kodiakkreatures.ca</a>
         </address>

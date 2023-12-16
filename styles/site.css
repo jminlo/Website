@@ -4,6 +4,8 @@
     --backgroundColour: #0f0f0f;
     --primaryColour: #c93432;
     --fontColour: #fff;
+    --gold1: #be9e44;
+    --gold2: #d8c690;
 }
 
 body {
@@ -75,6 +77,95 @@ body {
     opacity: 0.9;
 }
 
+#firstP a {
+    color: var(--primaryColour);
+    text-decoration: underline;
+}
+
+.petCare {
+    align-items: center;
+    gap: 5px;
+    color: var(--primaryColour);
+    background-color: var(--fontColour);
+}
+
+.petCareInfo {
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+    inline-size: 25em;
+    margin-block-end: 0.5em;
+}
+
+.backgroundImgVets {
+    min-block-size: 50vh;
+    background-image: url(../images/vetsTimaMiroshnichenko.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+    height: 80vh;
+    opacity: 0.9;
+}
+
+.tables{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.tables h2{
+    color: var(--gold1);
+    grid-row: 1;
+    margin: auto;
+}
+
+#hoursLabel{
+    grid-column: 2;
+}
+
+#ratesLabel{
+    grid-column: 3;
+}
+
+table,
+th,
+td {
+    border: #fff 1px solid;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.neonText {
+	text-shadow: -2px -2px 10px var(--gold1), 2px 2px 10px var(--gold2);
+}
+
+.neonText2 {
+	text-shadow: -2px -2px 10px var(--primaryColour), 2px 2px 10px var(--fontColour);
+}
+
+tr:nth-child(even){
+    color: var(--primaryColour);
+}
+
+tr:nth-child(odd){
+    color: var(--fontColour);
+}
+
+.hours{
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.rates{
+    margin: auto;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
 .contactUs {
     display: grid;
 }
@@ -102,6 +193,135 @@ body {
     border-radius: 50%;
 }
 
+form {
+    color: var(--primaryColour);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+[for="fname"],
+[for="lname"],
+[for="email"],
+[for="extra"] {
+    margin-left: auto;
+}
+
+fieldset {
+    grid-column: 2;
+}
+
+[type="submit"],
+[type="reset"] {
+    grid-column: 2;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    background-color: var(--primaryColour);
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    justify-items: center;
+}
+
+.eishi{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.jeremy{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.nam{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.noah{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.eishi, .jeremy, .nam, .noah{
+    justify-self: end;
+}
+
+.h1Text{
+    grid-column: 3 / 4;
+    justify-self: start;
+}
+
+.h1Text h2{
+    color: var(--backgroundColour);
+}
+
+.h1Text p{
+    color: var(--fontColour);
+}
+
+.vidgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: var(--backgroundColour);
+    padding: 15px;
+    margin: auto;
+}
+
+.vidgrid video{
+    grid-column: 1;
+    margin-left: auto;
+}
+
+.vidgrid fieldset{
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.vidgrid fieldset legend{
+    color: var(--fontColour);
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    background-color: var(--primaryColour);
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+.grid2 p{
+    color: var(--fontColour);
+}
+
+.parrot, .cheetah, .dolphin{
+    margin: auto;
+    grid-row: 1 / 2;
+}
+
+.links{
+    font-size: 1.5em;
+    margin: 3em;
+    display: grid;
+    grid-column: repeat(2, auto);
+    list-style-image: url(/jminaloaiza_H10A03_Website/images/Untitled_design-removebg-preview\ \(1\).png);
+}
+
+.links h3{
+    color: var(--primaryColour);
+}
+
 .notMobileLogo {
     display: none;
 }
@@ -126,30 +346,7 @@ body {
     margin-block-end: 0.5em;
 }
 
-.petCare {
-    align-items: center;
-    gap: 5px;
-    color: var(--primaryColour);
-    background-color: var(--fontColour);
-}
 
-.petCareInfo {
-    text-align: center;
-    padding: 0.5em;
-    margin: auto;
-    inline-size: 25em;
-    margin-block-end: 0.5em;
-}
-
-.backgroundImgVets{
-    min-block-size: 50vh;
-    background-image: url(../images/vetsTimaMiroshnichenko.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 10%;
-    height: 80vh;
-    opacity: 0.9;
-}
 
 a {
     color: var(--fontColour);
@@ -250,14 +447,14 @@ main p {
         height: auto;
         padding: 2em;
     }
-    
-    .floatIndex1{
-    float: right;
-    padding: 0.5em;
-}
 
-.floatIndex2{
-    float: left;
-    padding: 0.5em;
-}
+    .floatIndex1 {
+        float: right;
+        padding: 0.5em;
+    }
+
+    .floatIndex2 {
+        float: left;
+        padding: 0.5em;
+    }
 }
